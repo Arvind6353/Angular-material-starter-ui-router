@@ -1,6 +1,6 @@
-var app = angular.module('StarterApp', ['ngMaterial', 'ngMdIcons','ui.router']);
+var app = angular.module('StarterApp', ['ngMaterial', 'ngMdIcons']);
 
-
+/*
 app.config(['$stateProvider', '$urlRouterProvider', '$logProvider', 
     function ($stateProvider, $urlRouterProvider) {
 
@@ -22,7 +22,7 @@ app.config(['$stateProvider', '$urlRouterProvider', '$logProvider',
 		)
         
     }])
-
+*/
 app.controller('AppCtrl', ['$scope', '$mdBottomSheet','$mdSidenav', '$mdDialog', function($scope, $mdBottomSheet, $mdSidenav, $mdDialog){
   $scope.toggleSidenav = function(menuId) {
     $mdSidenav(menuId).toggle();
